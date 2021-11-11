@@ -1,0 +1,117 @@
+@use "base/colors.scss";
+
+.popup {
+  position: fixed;
+  z-index: 99;
+  bottom: 0%;
+  width: 100%;
+  background-color: colors.$orangelight;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.moveup {
+  animation: moveUp 0.8s 1;
+}
+.movedown {
+  animation: moveDown 0.8s 1;
+}
+@keyframes moveUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+.popup {
+  h2 {
+    font-size: 1.2rem;
+    color: colors.$grey;
+    padding: 1.8rem 0rem 2rem 0rem;
+  }
+
+  input[type="email"] {
+    background-color: colors.$white;
+    border-radius: 2rem;
+    padding: 0.6em 1.2rem;
+    min-width: 36vw;
+    color: colors.$grey;
+  }
+  input[type="submit"] {
+    background-color: colors.$grey;
+    color: colors.$white;
+    font-family: shapiro-regular;
+    font-weight: regular;
+    border-radius: 2rem;
+    padding: 0.6em 1.2rem;
+    margin-left: 0.6em;
+  }
+
+  label[for="email"] {
+    font-size: 0.8rem;
+    color: colors.$grey;
+    padding-bottom: 0.2rem;
+  }
+
+  .email-2 {
+    margin-bottom: 2em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    padding-bottom: 0.1rem;
+    max-width: 100ch;
+  }
+  .error {
+    text-align: left;
+  }
+
+  p {
+    color: black;
+    font-size: 0.8rem;
+    bottom: 1.8rem;
+  }
+
+  .yay {
+    font-size: 1.2;
+    text-align: center;
+    color: colors.$green;
+    padding-top: 1rem;
+    font-weight: bold;
+    transition: ease-out 0.1s;
+  }
+  .x {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 1.5rem;
+    color: colors.$mediumgrey;
+    cursor: pointer;
+  }
+}
+.hidden {
+  visibility: hidden;
+}

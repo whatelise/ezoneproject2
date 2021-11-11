@@ -1,0 +1,70 @@
+@use "base/colors.scss";
+
+#carousel {
+  display: flex;
+  width: 80rem;
+  flex-direction: row;
+}
+
+#carousel {
+  .area {
+    width: 11rem;
+    height: 16rem;
+    background-color: colors.$cardbackground;
+    margin: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  .areaheader {
+    font-size: 1.3em;
+    text-align: left;
+    margin-top: 0.2rem;
+  }
+
+  .areadescription {
+    text-align: left;
+    padding: 0rem 1rem 1rem 1rem;
+    margin-top: 0;
+    letter-spacing: 0.001rem;
+    word-spacing: 0.01px;
+    line-height: 1.4rem;
+    color: colors.$white;
+    font-size: 0.9rem;
+  }
+
+  button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 78%;
+    margin: auto;
+  }
+  .area1 {
+    border: 3px solid colors.$bluelight;
+  }
+  .area2 {
+    border: 3px solid colors.$orange;
+  }
+  .area3 {
+    border: 3px solid colors.$lightgrey;
+  }
+  .area4 {
+    border: 3px solid colors.$blue;
+  }
+  .area5 {
+    border: 3px solid colors.$mediumgrey;
+  }
+}
+
+#carousel {
+  button:hover {
+    filter: brightness(0.8);
+    transition: ease-out 0.1s;
+  }
+  .selected {
+    background-color: colors.$green;
+    transition: ease-out 0.1s;
+  }
+}

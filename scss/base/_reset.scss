@@ -1,0 +1,81 @@
+@use "colors";
+
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: colors.$grey;
+}
+h1 {
+  font-size: 3rem;
+  font-family: uniform-pro-con-black, sans-serif;
+  letter-spacing: 0.05em;
+  color: colors.$orangelight;
+  transition: all 0.4s ease-in;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.h1 {
+  color: colors.$grey;
+  -webkit-text-stroke-width: 0.05rem;
+  -webkit-text-stroke-color: colors.$orangelight;
+  margin-top: 0;
+}
+.h1wrapper {
+  text-align: center;
+  width: 100%;
+  max-height: 840px;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  z-index: -1;
+  margin-top: 4rem;
+}
+p {
+  font-family: uniform-pro-con, sans-serif;
+  font-size: 1rem;
+  display: block;
+  line-height: 150%;
+  text-align: center;
+  color: colors.$orangelight;
+  transition: all 0.4s ease-in;
+  max-width: 45ch;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 3rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: uniform-pro-con, sans-serif;
+  color: colors.$white;
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 0.9em;
+  color: white;
+  background-color: transparent;
+  border: 0.16rem solid white;
+  border-radius: 40px;
+  font-family: uniform-pro-con, sans-serif;
+  padding: 0.4rem;
+  width: 7rem;
+}

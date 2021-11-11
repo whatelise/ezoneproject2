@@ -1,0 +1,42 @@
+@use "colors";
+
+@font-face {
+  font-family: sharpiro-bold;
+  src: url("../../fonts/sharpiro-bold.ttf");
+}
+
+@font-face {
+  font-family: shapiro-regular;
+  src: url("../../fonts/sharpiro-regular.ttf");
+}
+
+@font-face {
+  font-family: uniform-pro-con-black;
+  src: url("../../fonts/uniform-pro-con-black.ttf");
+}
+@font-face {
+  font-family: uniform-pro-con-medium;
+  src: url("../../fonts/uniform-pro-con-medium.ttf");
+}
+
+a,
+label,
+input[type="email"] {
+  text-decoration: none;
+  font-family: shapiro-regular;
+  font-weight: regular;
+}
+
+.footer-links {
+  a {
+    font-size: 0.9rem;
+    color: colors.$white;
+  }
+}
+
+.footer-extra-info {
+  a {
+    font-size: 0.7rem;
+    color: colors.$mediumgrey;
+  }
+}

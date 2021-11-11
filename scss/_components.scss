@@ -1,0 +1,19 @@
+@use "base/colors.scss";
+//scrollbar for all browsers
+#signup {
+  scrollbar-width: thin;
+  /*   scrollbar-color: colors.$grey colors.$mediumgrey; */
+}
+
+#signup::-webkit-scrollbar {
+  width: 11px;
+}
+
+#signup::-webkit-scrollbar-track {
+  background: colors.$mediumgrey;
+}
+#signup::-webkit-scrollbar-thumb {
+  background-color: colors.$grey;
+  border-radius: 1em;
+  border: 3px solid colors.$mediumgrey;
+}
